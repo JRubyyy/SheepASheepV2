@@ -97,9 +97,9 @@ const initializeTopic = async (token) => {
 
 const initialize = async (token, isTopic = false) => {
   console.log(">> 初始化地图信息 <<");
-  if (isTopic) {
-    await initializeTopic(token);
-  }
+  //if (isTopic) {
+  //  await initializeTopic(token);
+  //}
   console.log("获取地图信息");
   const mapInfoData = await getMapInfo(token, isTopic);
   if (mapInfoData.err_code !== 0) {
